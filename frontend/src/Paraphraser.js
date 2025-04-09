@@ -21,7 +21,6 @@ export default function Paraphraser() {
 
     const handleSubmit = async () => {
         try {
-          // Replace with your actual backend API endpoint
           const response = await fetch('http://localhost:8080/chat-completion', {
             method: 'POST',
             headers: {
@@ -36,7 +35,7 @@ export default function Paraphraser() {
 
           const data = await response.json();
           console.log(data);
-          setOutputText(data.response); // Assume the response has a `result` field
+          setOutputText(data.response);
         } catch (error) {
           setOutputText(`Error: ${error.message}`);
         }
