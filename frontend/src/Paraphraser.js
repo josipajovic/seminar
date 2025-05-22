@@ -30,7 +30,7 @@ export default function Paraphraser() {
           });
 
           if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+            throw new Error(`Unesite tekst za parafraziranje`);
           }
 
           const data = await response.json();
