@@ -30,10 +30,10 @@ app.post("/chat-completion", async (req, res) => {
 
 async function getChatGptCompletion(text) {
 
-  const prompts = "Parafraziraj sljedeći tekst.\nTekst je na Hrvatskom jeziku.\n" +
+  const prompts = "Parafraziraj sljedeći tekst.\nTekst je na hrvatskom jeziku.\n" +
                   "Parafraziraj u duhu hrvatskog jezika.\n Sa zadržavanjem istog značenja.\n" +
                   "Promijeni korištene riječi i strukturu rečenica\n" +
-                  "Ako je tekst ne moguće parafrairati, odgovor treba biti:" +
+                  "Ako je tekst nemoguće parafrairati, odgovor treba biti:" +
                   "Nije moguće parafrazirati uneseni tekst. Unesite tekst na hrvatskom jeziku.\n"+
                   "<text>\n" + text + "</text>"
 
